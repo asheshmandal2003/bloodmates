@@ -33,3 +33,5 @@ donourSchema.pre("save", async function () {
 });
 
 const Donour = mongoose.model("Donour", donourSchema);
+
+module.exports = Donour
