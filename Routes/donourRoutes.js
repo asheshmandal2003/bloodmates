@@ -9,6 +9,6 @@ const authControl = require('../Middlewares/authController')
 router.post("/forms", addDonourConroller)
 router.post("/register", otpValidateController)
 router.post("/login", logincontroller)
-router.get("/view",authControl, viewDonourController)
+router.get("/view", viewDonourController)
 
 module.exports = router
