@@ -19,7 +19,10 @@ app.get("/", (req, res)=>{
     res.send("Okay")
 })
 
-
+app.use((err, req, res, next) => {
+    const { message = "Oh no Error!!!", status = 500 } = err;
+    res.status(status).send(`${message}`);  
+  })
 app.listen(port,()=>{
     console.log(`Server running on port ${port}`)
 })

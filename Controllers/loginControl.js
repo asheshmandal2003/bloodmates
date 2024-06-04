@@ -16,9 +16,11 @@ const authController = async (req, res, next)=>{
     else{
        const valid = await bcrypt.compare(password, user.password);
        if(valid){
+        const firstname = user.firstname;
+        const lasttname = user.lastname;
         const token = jwt.sign({
-            email: email,
-            password: password
+            name: `${firstname} ${lasttname}`,
+            email: email
         },
         process.env.JWT_SECRET,
         { expiresIn: 60*60 });
@@ -27,7 +29,7 @@ const authController = async (req, res, next)=>{
             expires: new Date(Date.now() + 3600000),
             httpOnly: true
         });
-        console.log(token);
+        console.log(`token = ${token}`);
         res.send("login successful");
        }
        else{
