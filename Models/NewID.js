@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 
 const otpSchema = new mongoose.Schema({
+    firstname: String,
+    lastname: String,
     email : String,
     otp : Number,
     password : String
