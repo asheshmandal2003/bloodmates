@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>BloodMates</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/fav.jpg">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawsom-all.min.css">
+    <link rel="stylesheet" href="assets/plugins/grid-gallery/css/grid-gallery.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+
+<body>
+
+    <header class="continer-fluid ">
+        <div class="header-top">
+            <div class="container">
+                <div class="row col-det">
+                    <div class="col-lg-6 d-none d-lg-block">
+                        <ul class="ulleft">
+                            <li>
+                                <i class="far fa-envelope"></i>
+                                bdey11333@gmail.com
+                                <span>|</span>
+                            </li>
+                            <li>
+                                <i class="far fa-clock"></i>
+                                Service Time : 10 AM - 8 PM
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <ul class="ulright">
+                            <li>
+                                <a href="/donour/forms"><i class="fas fa-cloud-upload-alt"></i>
+                                    Donour Register</a>
+                                <span>|</span>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-user"></i>
+                                    Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menu-jk" class="header-bottom">
+            <div class="container">
+                <div class="row nav-row">
+                    <div class="col-md-3 logo">
+                        <img src="assets/images/Logo-BloodMates.jpg" alt="">
+                    </div>
+                    <div class="col-md-9 nav-col">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#">Home
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#about">About Us</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#gallery">Gallery</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#process">Process</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#blog">Blog</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#contact">Contact US</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ################# Slider Starts Here#######################--->
+    <% if(messages && messages.length){ %>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <%= messages %>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <% } %>
+            <div class="slider-detail">
+
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="assets/images/slider/slide-02.jpg" alt="First slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class=" bounceInDown">Donate Blood & Save a Life</h5>
+                                <p class=" bounceInLeft">Every two seconds, someone in India needs blood, and a single
+                                    donation can save up to three lives.<br> Donating blood is a simple, selfless act
+                                    that makes a significant impact on countless individuals and their families.</p>
+
+                                <div class=" vbh">
+
+                                    <div class="btn btn-success  bounceInUp"> Book Appointment </div>
+                                    <div class="btn btn-success  bounceInUp"> Contact US </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="assets/images/slider/slide-03.jpg" alt="Third slide">
+                            <div class="carousel-caption vdg-cur d-none d-md-block">
+                                <h5 class=" bounceInDown">Donate Blood & Save a Life</h5>
+                                <p class=" bounceInLeft"> We aim to build a community of compassionate donors dedicated
+                                    to ensuring a stable and diverse blood supply for all.</p>
+                                <p>By fostering awareness and facilitating the donation process, we strive to make a
+                                    significant impact on public health and save countless lives.</p>
+
+                                <div class=" vbh">
+
+                                    <div class="btn btn-danger  bounceInUp"> Donate Now </div>
+                                    <div class="btn btn-danger  bounceInUp"> Contact US </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+
+            </div>
+
+            <!--*************** About Us Starts Here ***************-->
+            <section id="about" class="contianer-fluid about-us">
+                <div class="container">
+                    <div class="row session-title">
+                        <h2>About Us</h2>
+                        <p>We are Tech Wizard, Doing Effort to save lives </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 text">
+                            <h2>About Blood Doners</h2>
+                            <p>Blood donors play a crucial role in saving lives and improving health outcomes. Their
+                                selfless contributions ensure that hospitals and emergency services have a steady supply
+                                of blood for surgeries, trauma care, and chronic illness treatments.</p>
+                            <p>Each donation can save up to three lives, providing hope and a second chance to patients
+                                in critical need. Beyond the immediate medical impact, blood donation fosters a sense of
+                                community and solidarity, as individuals come together to support one another in times
+                                of need. By donating blood, donors not only help others but also promote a culture of
+                                generosity and compassion.</p>
+                            <p>The need for blood is constant and ever-present, with millions of people requiring
+                                transfusions annually due to accidents, surgeries, or conditions like anemia and cancer.
+                                Blood donations are particularly vital in times of disaster or crisis, when the demand
+                                for blood can surge unexpectedly. Regular donations ensure a stable and diverse blood
+                                supply, capable of meeting the varying needs of patients across different regions and
+                                communities. This reliability is crucial for maintaining the health infrastructure and
+                                ensuring that no life is lost due to a shortage of blood.</p>
+                        </div>
+                        <div class="col-md-6 image">
+                            <img src="assets/images/about.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- ################# Gallery Start Here #######################--->
+
+            <div id="gallery" class="gallery container-fluid">
+                <div class="container">
+                    <div class="row session-title">
+                        <h2>Checkout Our Gallery</h2>
+                    </div>
+                    <div class="gallery-row row">
+                        <div id="gg-screen"></div>
+                        <div class="gg-box">
+                            <div class="gg-element">
+                                <img src="assets/images/gallery/g1.jpg">
+                            </div>
+                            <div class="gg-element">
+                                <img src="assets/images/gallery/g2.jpg">
+                            </div>
+                            <div class="gg-element">
+                                <img src="assets/images/gallery/g3.jpg">
+                            </div>
+                            <div class="gg-element">
+                                <img src="assets/images/gallery/g4.jpg">
+                            </div>
+                            <div class="gg-element">
+                                <img src="assets/images/gallery/g5.jpg">
+                            </div>
+                            <div class="gg-element">
+                                <img src="assets/images/gallery/g6.jpg">
+                            </div>
+                            <div class="gg-element">
+                                <img src="assets/images/gallery/g7.jpg">
+                            </div>
+                            <!-- <div class="gg-element">
+                                <img src="assets/images/gallery/g8.jpg">
+                            </div>
+                            <div class="gg-element">
+                                <img src="assets/images/gallery/g9.jpg">
+                            </div>
+                            <div class="gg-element">
+                                <img src="assets/images/gallery/g10.jpg">
+                            </div> -->
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- ################# Donation Process Start Here #######################--->
+
+            <section id="process" class="donation-care">
+                <div class="container">
+                    <div class="row session-title">
+                        <h2>Donation Process</h2>
+                        <p>The donation process from the time you arrive center until the time you leave</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 vd">
+                            <div class="bkjiu">
+                                <img src="assets/images/gallery/g1.jpg" alt="">
+                                <h4><b>1 - </b>Registration</h4>
+                                <p>Sign up easily and take the first step towards saving lives.</p>
+                                <button class="btn btn-sm btn-danger">Readmore <i
+                                        class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 vd">
+                            <div class="bkjiu">
+                                <img src="assets/images/gallery/g2.jpg" alt="">
+                                <h4><b>2 - </b>Screening</h4>
+                                <p>Get a quick health check to ensure your safety and that of the recipients.</p>
+                                <button class="btn btn-sm btn-danger">Readmore <i
+                                        class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 vd">
+                            <div class="bkjiu">
+                                <img src="assets/images/gallery/g3.jpg" alt="">
+                                <h4><b>3 - </b>Donation</h4>
+                                <p>Give your blood and share the gift of life.</p>
+                                <button class="btn btn-sm btn-danger">Readmore <i
+                                        class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 vd">
+                            <div class="bkjiu">
+                                <img src="assets/images/gallery/g4.jpg" alt="">
+                                <h4><b>4 - </b>Save Life</h4>
+                                <p>Your donation can make a life-changing difference to those in need.</p>
+                                <button class="btn btn-sm btn-danger">Readmore <i
+                                        class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+
+
+
+
+            <!--################### Our Blog Starts Here #######################--->
+            <div id="blog" class="blog-container contaienr-fluid">
+                <div class="container">
+                    <div class="session-title row">
+                        <h2>Latest Blog</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla vel nisl a dictum.
+                            Donec ut est arcu. Donec hendrerit velit consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="row news-row">
+                        <div class="col-md-6">
+                            <div class="news-card">
+                                <div class="image">
+                                    <img src="assets/images/blog/blog_01.jpg" alt="">
+                                </div>
+                                <div class="detail">
+                                    <h3>Latest News about Smarteye</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla vel nisl
+                                        a dictum. Donec ut est arcu. Donec hendrerit consectetur adipiscing elit. </p>
+                                    <p class="footp">
+                                        27 Comments <span>/</span>
+                                        Blog Design <span>/</span>
+                                        Read More
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="news-card">
+                                <div class="image">
+                                    <img src="assets/images/blog/blog_02.jpg" alt="">
+                                </div>
+                                <div class="detail">
+                                    <h3>Apple Launch its New Phone</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla vel nisl
+                                        a dictum. Donec ut est arcu. Donec hendrerit consectetur adipiscing elit. </p>
+                                    <p class="footp">
+                                        27 Comments <span>/</span>
+                                        Blog Design <span>/</span>
+                                        Read More
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="news-card">
+                                <div class="image">
+                                    <img src="assets/images/blog/blog_03.jpg" alt="">
+                                </div>
+                                <div class="detail">
+                                    <h3>About Windows 10 Update</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla vel nisl
+                                        a dictum. Donec ut est arcu. Donec hendrerit consectetur adipiscing elit. </p>
+                                    <p class="footp">
+                                        27 Comments <span>/</span>
+                                        Blog Design <span>/</span>
+                                        Read More
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="news-card">
+                                <div class="image">
+                                    <img src="assets/images/blog/blog_04.jpg" alt="">
+                                </div>
+                                <div class="detail">
+                                    <h3>Latest News about Smarteye</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla vel nisl
+                                        a dictum. Donec ut est arcu. Donec hendrerit consectetur adipiscing elit. </p>
+                                    <p class="footp">
+                                        27 Comments <span>/</span>
+                                        Blog Design <span>/</span>
+                                        Read More
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!--*************** Footer  Starts Here *************** -->
+            <footer id="contact" class="container-fluid">
+                <div class="container">
+
+                    <div class="row content-ro">
+                        <div class="col-lg-4 col-md-12 footer-contact">
+                            <h2>Contact Informatins</h2>
+                            <div class="address-row">
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="detail">
+                                    <p>JIS College of Engineering, A5, Phase-III, Kalyani, Nadia</p>
+                                </div>
+                            </div>
+                            <div class="address-row">
+                                <div class="icon">
+                                    <i class="far fa-envelope"></i>
+                                </div>
+                                <div class="detail">
+                                    <p>bdey11333@gmail.com <br> asheshmandal@gmail.com <br> 740asish@gmail.com <br>
+                                        mallick.juvenile@gmail.com <br> sayandutta84314@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="address-row">
+                                <div class="icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="detail">
+                                    <p>+91 9751791203 <br> +91 9159669599</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 footer-links">
+                            <div class="row no-margin mt-2">
+                                <h2>Quick Links</h2>
+                                <ul>
+                                    <li>Home</li>
+                                    <li>About Us</li>
+                                    <li>Contacts</li>
+                                    <li>Pricing</li>
+                                    <li>Gallery</li>
+                                    <li>eatures</li>
+
+                                </ul>
+                            </div>
+                            <div class="row no-margin mt-1">
+                                <h2 class="m-t-2">Our Partners</h2>
+                                <ul>
+                                    <li>Hospitals</li>
+                                    <li>Rural Healthcamp</li>
+                                    <li>Urban Clinics</li>
+                                    <li>Health Centres</li>
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4 col-md-12 footer-form">
+                            <div class="form-card">
+                                <div class="form-title">
+                                    <h4>Quick Message</h4>
+                                </div>
+                                <div class="form-body">
+                                    <input type="text" placeholder="Enter Name" class="form-control">
+                                    <input type="text" placeholder="Enter Mobile no" class="form-control">
+                                    <input type="text" placeholder="Enter Email Address" class="form-control">
+                                    <input type="text" placeholder="Your Message" class="form-control">
+                                    <button class="btn btn-sm btn-primary w-100">Send Request</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-copy">
+                        <div class="row">
+                            <div class="col-lg-8 col-md-6">
+                                <p>Copyright © <a href="https://github.com/asheshmandal2003/bloodmates">Tech Wizards</a>
+                                    | All right reserved.</p>
+                            </div>
+                            <div class="col-lg-4 col-md-6 socila-link">
+                                <ul>
+                                    <li><a><i class="fab fa-github"></i></a></li>
+                                    <li><a><i class="fab fa-google-plus-g"></i></a></li>
+                                    <li><a><i class="fab fa-pinterest-p"></i></a></li>
+                                    <li><a><i class="fab fa-twitter"></i></a></li>
+                                    <li><a><i class="fab fa-facebook-f"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+
+</body>
+
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/plugins/grid-gallery/js/grid-gallery.min.js"></script>
+<script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+<script src="assets/js/script.js"></script>
+
+</html>

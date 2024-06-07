@@ -10,8 +10,8 @@ const addDonour = async(req, res, next)=>{
     const exist = await Donour.findOne({email})
 
     if (exist) {
-        //req.flash("fail", "Account already exist");
-        res.send("User already exist")
+        req.flash("fail", "Account already exist");
+        res.redirect('donour/forms');
     }
     else {
         let rand = Math.floor(Math.random() * 10000);
@@ -27,7 +27,7 @@ const addDonour = async(req, res, next)=>{
                 from: process.env.SENDER_MAIL,
                 to: `${email}`,
                 subject: 'Email Verification',
-                text: `Your one Time verification Code to sign up in BloodMates is: ${rand}`
+                text: `Your one Time verification Code to sign up in BloodMate is: ${rand}`
             };
 
             transporter.sendMail(mailOptions, function (error, info) {
@@ -44,18 +44,21 @@ const addDonour = async(req, res, next)=>{
                 await NewID.findByIdAndDelete(id);
             }
             const user = new NewID({
+                firstname : fname,
+                lastname : lname,
                 email : email,
                 otp : rand,
                 password : password
             })
             await user.save();
 
-            // req.flash("fname", firstname);
-            // req.flash("lname", lastname);
-            // req.flash("email", email);
 
-            //res.redirect('/user/otp');
-            res.send("Now submit the [otp, fname, lname, email] in next url")
+            //req.flash("otp", rand);
+            // req.flash("fname", fname);
+            // req.flash("lname", lname);
+            req.flash("email", email);
+            //req.flash("password", password);
+            res.redirect('/donour/register');
         } catch (error) {
             next(error)
         }
